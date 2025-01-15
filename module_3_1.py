@@ -11,12 +11,10 @@ def string_info(string):
 def is_contains(string, *args):
     count_calls()
     list_to_search = args[0]
-    match = False
     for i in list_to_search:
         if string.lower() == i.lower():
-            match = True
-            break
-    return match
+            return True
+    return False
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
 print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))
