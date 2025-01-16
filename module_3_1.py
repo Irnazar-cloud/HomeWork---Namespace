@@ -8,9 +8,8 @@ def string_info(string):
     a = []
     a.extend([len(string), string.upper(), string.lower()])
     return a
-def is_contains(string, *args):
+def is_contains(string, list_to_search):
     count_calls()
-    list_to_search = args[0]
     for i in list_to_search:
         if string.lower() == i.lower():
             return True
